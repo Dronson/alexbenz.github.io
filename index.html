@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>UNCLE BENZ</title>
+	<style>
+		body {
+  overflow: hidden;
+  margin: 0;
+  height: 100vh;
+  perspective: 20em;
+  background:url('333.jpg') no-repeat;
+  background-size:cover;
+}
+
+div {
+  position: absolute;
+  width: 40vmin;
+  height: 40vmin;
+}
+
+.card {
+  top: 0%;
+  left: 40%;
+  margin: -20vmin;
+  transform-style: preserve-3d;
+  text-align: center;
+  font: calc(1em + 10vmin)/40vmin trebuchet ms, verdana, arial, sans-serif;
+  font-size: calc(1em + 10vmin);
+  line-height: 40vmin;
+  font-family: trebuchet ms, verdana, arial, sans-serif;
+  animation: rot 6s ease-in-out infinite;
+}
+
+
+@keyframes rot {
+  50% {
+    transform: rotateY(1.5turn);
+  }
+  100% {
+    transform: rotateY(1turn);
+  }
+}
+.face {
+  backface-visibility: hidden;
+}
+.face:last-child {
+  transform: rotateY(1.5turn);
+}
+
+	</style>
+</head>
+<body>
+	<div class='card'>
+    <div class='face'><img src="mercedes_logos_PNG18.png" alt=""></div>
+    <div class='face'><img src="mercedes_logos_PNG18.png" alt=""></div>
+  </div>
+</body>
+</html>
